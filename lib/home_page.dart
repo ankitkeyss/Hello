@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class MyHomePage extends StatefulWidget {
@@ -15,7 +16,18 @@ class _MyHomePageState extends State<MyHomePage> {
         title: Text("Hello"),
       ),
       body: Center(
-        child: Text('Hello This is Testing App'),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Container(
+
+              child: CircleAvatar(
+
+                backgroundImage: NetworkImage('https://upload.wikimedia.org/wikipedia/commons/9/9a/Gull_portrait_ca_usa.jpg',),
+              )
+            )
+          ],
+        ),
       ),
     );
   }
